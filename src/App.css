@@ -1,1 +1,58 @@
 /*Schrijf hier jouw eigen CSS!*/
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+
+header > :nth-child(2) {
+  display: flex;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #1e59a6;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+  padding: 2rem 0;
+}
+
+.loading,
+.error {
+  background-color: #1e59a6;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  background-color: #f52929;
+}
